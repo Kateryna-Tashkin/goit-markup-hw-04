@@ -15,7 +15,8 @@
   --secondary-accent-color: #ffffff;
   --contacts-text-footer: rgba(255, 255, 255, 0.6);
   --bg-header: #ffffff;
-  --bg-hero-footer: #2f303a;
+  --bg-hero: #c4c4c4;
+  --bg-footer: #2f303a;
   --bg-primary: #e5e5e5;
   --bg-secondary: #f5f4fa;
   --bg-box: #ffffff;
@@ -30,7 +31,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
 .body {
   color: var(--primary-text-color);
   background: var(--bg-primary);
@@ -155,8 +163,18 @@ html {
 }
 
 .hero {
-  background: var(--bg-hero-footer);
+  background: var(--bg-hero);
   text-align: center;
+
+  background-image: url(../image/img-bg.jpg);
+  max-width: 1600px;
+  height: 600px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: x 0px y 80px;
+  margin-right: auto;
+  margin-left: auto;
 
   padding-top: 200px;
   padding-bottom: 200px;
@@ -212,6 +230,18 @@ html {
 .list-box-first + .list-box-first {
   margin: 0px 0px 0px 30px;
   padding: 0px;
+}
+
+.list-box-first::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  margin: 0px 0px 30px 0px;
 }
 .section-title {
   font-size: 14px;
@@ -290,8 +320,24 @@ html {
   margin-bottom: 30px;
   padding: 0px;
 }
+/* новая секция*/
+.third-margin {
+  margin: 0px 0px 50px 0px;
+}
+.section-clients {
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-box {
+  display: flex;
+}
+.clients-margin + .clients-margin {
+  margin: 0px 0px 0px 30px;
+}
+
 .page-footer {
-  background: var(--bg-hero-footer);
+  background: var(--bg-footer);
 
   padding-top: 60px;
   padding-bottom: 60px;
