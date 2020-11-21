@@ -334,8 +334,36 @@ img {
   font-size: 16px;
   line-height: 1.19;
 
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   padding: 0px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: violet;
+}
+.social-list-link:hover {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-svg {
+  fill: var(--accent-color);
+}
+.team-list-content-wrapper {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
 }
 /* новая секция*/
 .third-margin {
@@ -348,21 +376,25 @@ img {
 }
 .clients-box {
   display: flex;
+  justify-content: center;
 }
 .clients-link {
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1 px solid var(--border-clients);
+  border-radius: 4px;
 }
-.clients-list-icon {
-  margin: 0px;
-  padding: 0px;
+.clients-link:hover {
+  fill: var(--accent-color);
+}
+.clients-link.clients-list-icon:hover {
+  fill: var(--accent-color);
 }
 .clients-margin {
   width: 170px;
   height: 90px;
-  padding: 0px;
 }
-
 .clients-margin + .clients-margin {
   margin: 0px 0px 0px 30px;
 }
