@@ -23,6 +23,7 @@
   --border-bottom: #ececec;
   --shadow: rgba(47, 48, 58, 0.4);
   --border-clients: #afb1b8;
+  --logo-color: #afb1b8;
 }
 
 html {
@@ -140,6 +141,14 @@ img {
   display: flex;
   margin-left: auto;
 }
+.auth-nav-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.auth-nav-svg:hover {
+  fill: var(--accent-color);
+}
 .list-contacts {
   display: block;
 }
@@ -163,7 +172,6 @@ img {
 .auth-nav a:focus {
   color: var(--accent-color);
 }
-
 .hero {
   background: var(--bg-hero);
   text-align: center;
@@ -360,7 +368,7 @@ img {
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
-.social-list-link:hover .social-list-svg {
+.social-list-link:hover .social-list-svg:hover {
   fill: var(--accent-color);
 }
 .team-list-content-wrapper {
@@ -390,16 +398,13 @@ img {
   border: 1 px solid var(--border-clients);
   border-radius: 4px;
 }
-.clients-link:hover {
+.list.clients-link:hover {
   fill: var(--accent-color);
 }
 .clients-link.clients-list-icon:hover {
   fill: var(--accent-color);
 }
-.clients-margin {
-  width: 170px;
-  height: 90px;
-}
+
 .clients-margin + .clients-margin {
   margin: 0px 0px 0px 30px;
 }
