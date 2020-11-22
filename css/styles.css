@@ -142,6 +142,7 @@ img {
   margin-left: auto;
 }
 .auth-nav-svg {
+  fill: var(--logo-color);
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -150,7 +151,10 @@ img {
   fill: var(--accent-color);
 }
 .list-contacts {
-  display: block;
+  display: flex;
+}
+.list-contacts:hover {
+  fill: var(--accent-color);
 }
 .auth-nav .list-contacts + .list-contacts {
   margin-left: 50px;
@@ -353,6 +357,7 @@ img {
   justify-content: space-between;
 }
 .social-list-svg {
+  fill: var(--logo-color);
   width: 20px;
   height: 20px;
 }
@@ -363,13 +368,12 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: violet;
 }
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
 .social-list-link:hover .social-list-svg:hover {
-  fill: var(--accent-color);
+  fill: var(--secondary-accent-color);
 }
 .team-list-content-wrapper {
   padding-left: 32px;
@@ -398,10 +402,13 @@ img {
   border: 1 px solid var(--border-clients);
   border-radius: 4px;
 }
-.list.clients-link:hover {
+.clients-list-icon {
+  fill: var(--logo-color);
+}
+.clients-link:hover svg {
   fill: var(--accent-color);
 }
-.clients-link.clients-list-icon:hover {
+.clients-list-icon:hover {
   fill: var(--accent-color);
 }
 
@@ -462,6 +469,62 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.text-footer {
+  color: var(--secondary-accent-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.box-social-link {
+  margin-left: 156px;
+  padding-top: 10px;
+}
+.list-social-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-item-footer {
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-item-footer:hover {
+  fill: var(--accent-color);
+}
+.list-item-footer {
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+.list-item-footer:last-child {
+  margin-right: 0px;
+}
+.list-item-footer:hover {
+  background-color: var(--accent-color);
+}
+.social-svg-footer {
+  fill: var(--secondary-accent-color);
+  width: 20px;
+  height: 20px;
+}
+.social-svg-footer:hover {
+  fill: var(--secondary-accent-color);
+}
+
+.all-footer-container {
+  display: flex;
 }
 .footer-adress {
   padding-top: 60px;
