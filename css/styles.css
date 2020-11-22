@@ -147,7 +147,7 @@ img {
   height: 12px;
   margin-right: 10px;
 }
-.auth-nav-svg:hover {
+.link-auth-nav-svg:hover svg {
   fill: var(--accent-color);
 }
 .list-contacts {
@@ -372,7 +372,7 @@ img {
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
-.social-list-link:hover .social-list-svg:hover {
+.social-list-link:hover svg {
   fill: var(--secondary-accent-color);
 }
 .team-list-content-wrapper {
@@ -399,8 +399,6 @@ img {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1 px solid var(--border-clients);
-  border-radius: 4px;
 }
 .clients-list-icon {
   fill: var(--logo-color);
@@ -411,7 +409,13 @@ img {
 .clients-list-icon:hover {
   fill: var(--accent-color);
 }
-
+.clients-margin {
+  border: 1px solid var(--border-clients);
+  border-radius: 4px;
+}
+.clients-margin:hover {
+  border: 1px solid var(--accent-color);
+}
 .clients-margin + .clients-margin {
   margin: 0px 0px 0px 30px;
 }
@@ -491,6 +495,7 @@ img {
   margin-top: 20px;
 }
 .social-item-footer {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
